@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>StdServletProj</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+<!--   ********************************************************** -->
+  <servlet>
+    <servlet-name>Insert Form</servlet-name>
+    <servlet-class>org.InsertForm</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>Insert Form</servlet-name>
+    <url-pattern>/insertForm.do</url-pattern>
+  </servlet-mapping>
+  
+
+    <servlet>
+    <servlet-name>Process Insert Form</servlet-name>
+    <servlet-class>org.ProcessInsert</servlet-class>
+  </servlet>  
+    <servlet-mapping>
+    <servlet-name>Process Insert Form</servlet-name>
+    <url-pattern>/processInsert.do</url-pattern>
+  </servlet-mapping>
+  
+  <!--   ********************************************************** -->
+  
+  <servlet>
+    <servlet-name>Display Form</servlet-name>
+    <servlet-class>org.DisplayForm</servlet-class>
+  </servlet>  
+    <servlet-mapping>
+    <servlet-name>Display Form</servlet-name>
+    <url-pattern>/displayForm.do</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>Process Display Form</servlet-name>
+    <servlet-class>org.ProcessDisplay</servlet-class>
+  </servlet>  
+    <servlet-mapping>
+    <servlet-name>Process Display Form</servlet-name>
+    <url-pattern>/processDisplay.do</url-pattern>
+  </servlet-mapping>
+     
+  
+  <!--   ********************************************************** -->
+      <servlet>
+    <servlet-name>Delete Form</servlet-name>
+    <servlet-class>org.DeleteForm</servlet-class>
+  </servlet>  
+    <servlet-mapping>
+    <servlet-name>Delete Form</servlet-name>
+    <url-pattern>/deleteForm.do</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>Process Delete Form</servlet-name>
+    <servlet-class>org.ProcessDelete</servlet-class>
+  </servlet>  
+    <servlet-mapping>
+    <servlet-name>Process Delete Form</servlet-name>
+    <url-pattern>/processDelete.do</url-pattern>
+  </servlet-mapping>
+</web-app>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Insert title here</title>
+
+<script type="text/javascript">
+
+function colorsCal() 
+{ 
+
+	var x = document.getElementById("colors").value;
+	alert(x);
+	document.location.href='./colors.do?colorcode='+x;
+}
+</script>
+
+
+</head>
+<body>
+<select id="colors" onchange="colorsCal();">
+			<option value="">--Select--</option>
+			<option value="green">Green</option>
+			<option value="red">Red</option>
+			<option value="yellow">Yellow</option>
+</select>
+
+</body>
+</html>
